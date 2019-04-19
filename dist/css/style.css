@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.hero {
+  position: relative;
+  color: white;
+  font-family: 'sf_display';
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../img/stars-min.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hero__header {
+    display: flex;
+    position: relative;
+    height: 90px;
+    justify-content: center; }
+    .hero__header--logo {
+      position: absolute;
+      left: 65px;
+      top: 25px; }
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px; }
+  ul li {
+    padding: 8px 60px;
+    font-weight: bold;
+    font-size: 1.0625rem; }
+
+li:first-child {
+  border-right: solid 1px white; }
+
+li:last-child {
+  border-left: solid 1px white; }
+
+a {
+  font-size: 1.125rem;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  background: linear-gradient(#FF4F19, #FF3465);
+  padding: 35px 60px !important; }
+
+.quote {
+  position: absolute;
+  width: 400px;
+  font-size: 4.0625rem;
+  font-weight: bold;
+  top: 250px;
+  left: 60px; }
+  .quote span {
+    color: #FF3465; }
+
+@font-face {
+  font-family: 'sf_display';
+  src: url("../fonts/SFProDisplay-Bold.woff2") format("woff2"), url("../fonts/SFProDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'sf_display';
+  src: url("../fonts/SFProDisplay-Regular.woff2") format("woff2"), url("../fonts/SFProDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
